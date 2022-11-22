@@ -1,0 +1,25 @@
+const int PINO_SENSOR = A0;
+int leitura_sensor = 0;
+const int NUMERO_AMOSTRAS = 100; 
+long somatoria = 0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(PINO_SENSOR, INPUT);
+}
+
+void loop() {
+
+  for(int i = 1; i <= NUMERO_AMOSTRAS; i++){
+    leitura_sensor = analogRead(PINO_SENSOR); //Le o sensor
+    somatoria = somatoria + leitura_sensor; //Soma a variavel "somatoria" a leitura atual do sensor com seu valor anterior
+    float tensao = leitura_sensor*(5.0/1023); //Converte a leitura para tensao para referencia
+  }
+  int media = somatoria / NUMERO_AMOSTRAS;
+  if(media>350){
+    Serial.println(1);
+  }
+  media = 0;
+  somatoria = 0;
+  delay(5000);
+ }
