@@ -1,0 +1,318 @@
+[
+    {
+        "id": "98b51e90aba4ca45",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "21254b0a661f6bef",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3ba37fd4.6558f",
+        "type": "ui_group",
+        "name": "Example Flow",
+        "tab": "72415252.b2cadc",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "72415252.b2cadc",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6e4e3dda0364edbd",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4b271a6654221eed",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3acc73301dd56097",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "4b271a6654221eed",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8054d67359ae61fc",
+        "type": "twitter-credentials",
+        "screen_name": "ws_neutronica"
+    },
+    {
+        "id": "91c08538a8fb1961",
+        "type": "chatbot-telegram-node",
+        "botname": "Neutron",
+        "usernames": "",
+        "token": "5100057946:AAGqPmRzXIafJt65OgmV4_07HyYDHAqxyn8",
+        "providerToken": "",
+        "polling": "1000",
+        "store": "",
+        "log": "",
+        "debug": false,
+        "webHook": "",
+        "connectMode": "polling"
+    },
+    {
+        "id": "80b99021.9a4",
+        "type": "node-red-contrib-whatsapp-cmb-account",
+        "name": "WhatsApp API Account"
+    },
+    {
+        "id": "6107a97def01142a",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "a018a477e028c205",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1fcf8265e12fc9f1",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "koikoikoikoi",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "41804686",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "69c035bcd3d2fc9e",
+        "type": "node-red-contrib-whatsapp-cmb-account",
+        "name": "Renan "
+    },
+    {
+        "id": "a0f06905b68bfe84",
+        "type": "debug",
+        "z": "21254b0a661f6bef",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e277653ccb556a95",
+        "type": "function",
+        "z": "21254b0a661f6bef",
+        "name": "",
+        "func": "if(msg.planta==1){\n    msg.planta = \"Sua planta esta com sede\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 280,
+        "wires": [
+            [
+                "ee9c8a2ebfd2923f"
+            ]
+        ]
+    },
+    {
+        "id": "7c9890faf5c1c792",
+        "type": "serial in",
+        "z": "21254b0a661f6bef",
+        "name": "",
+        "serial": "6107a97def01142a",
+        "x": 90,
+        "y": 280,
+        "wires": [
+            [
+                "e277653ccb556a95"
+            ]
+        ]
+    },
+    {
+        "id": "ee9c8a2ebfd2923f",
+        "type": "node-red-contrib-whatsapp-cmb-send-message",
+        "z": "21254b0a661f6bef",
+        "name": "Whatsapp",
+        "account": "69c035bcd3d2fc9e",
+        "text": "Hora de regar a planta",
+        "inputtypemessage": "str",
+        "rejectssl": false,
+        "x": 520,
+        "y": 280,
+        "wires": [
+            [
+                "a0f06905b68bfe84"
+            ]
+        ]
+    }
+]
